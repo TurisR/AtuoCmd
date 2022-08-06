@@ -1,0 +1,33 @@
+[11:36:22]start test progress:index:0,times:1,check_err:False,log_file_name:./log/httpat_2022_01_18_11_36_22.txt
+[11:36:22]<-AT+UMV
+[11:36:22]->UMA602V1.0
+[11:36:22]->OK
+[11:36:22]->LTE_2021.12.28_2140
+[11:36:22]->UM-04-0304-0002
+[11:36:22]->UMA602/TNNLN
+[11:36:22]<-ATE0
+[11:36:22]->OK
+[11:36:22]<-AT+HTTPCFG="responseheader",0
+[11:36:22]->OK
+[11:36:22]<-AT+HTTPCFG="requestheader",0
+[11:36:22]->OK
+[11:36:23]<-AT+HTTPCFG="rspout/auto",1
+[11:36:23]->OK
+[11:36:23]<-AT+HTTPURL=118,10
+[11:36:23]->CONNECT
+[11:36:23]<-http://api.openweathermap.org/data/2.5/weather?q=shanghai&appid=c592e14137c3471fa9627b44f6649db4&mode=xml&units=metric
+[11:36:23]->+HTTPURL:http://api.openweathermap.org/data/2.5/weather?q=shanghai&appid=c592e14137c3471fa9627b44f6649db4&mode=xml&units=metric
+[11:36:23]->OK
+[11:36:23]<-AT+HTTPFILEDL=0
+[11:36:23]->OK
+[11:36:23]->+HTTPFILEDL: 0,200,818
+[11:36:24]<-AT+HTTPGET=10
+[11:36:24]->OK
+[11:36:24]-><?xml version="1.0" encoding="UTF-8"?>
+
+[11:36:24]-><current><city id="1796236" name="Shanghai"><coord lon="121.4581" lat="31.2222"></coord><country>CN</country><timezone>28800</timezone><sun rise="2022-01-17T22:52:42" set="2022-01-18T09:15:44"></sun></city><temperature value="10.46" min="9.93" max="10.92" unit="celsius"></temperature><feels_like value="9.13" unit="celsius"></feels_like><humidity value="60" unit="%"></humidity><pressure value="1029" unit="hPa"></pressure><wind><speed value="2" unit="m/s" name="Light breeze"></speed><gusts></gusts><direction></direction></wind><clouds value="0" name="clear sky"></clouds><visibility value="10000"></visibility><precipitation mode="no"></precipitation><weather number="800" value="clear sky" icon="01d"></weather><lastupdate value="2022-01-18T03:31:10"></lastupdate></current>
+[11:36:24]->+HTTPGET: 0,200,818
+[11:36:24][times:1]err_num:0
+[11:36:24][times:1]err_list:[]
+[11:36:24]+exit:0,1
+[11:36:26]stop test progress:runIndex:1

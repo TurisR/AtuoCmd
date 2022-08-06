@@ -1,0 +1,2 @@
+pyinstaller -F main.py -i ./config/AutoCMD2.ico -n AutoCMD_V1.3_nlog --noconsole
+pyarmor obfuscate ergou_test.py

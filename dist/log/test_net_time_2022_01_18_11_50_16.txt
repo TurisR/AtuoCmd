@@ -1,0 +1,11 @@
+[11:50:16]start test progress:index:0,times:1,check_err:False,log_file_name:./log/test_net_time_2022_01_18_11_50_16.txt
+[11:50:17]<-ATE0
+[11:50:17]->OK
+[11:50:17]->ATE0
+[11:50:17]<-AT+CFUN=0
+[11:50:18]->OK
+[11:50:18]<-AT+RESET
+[11:50:18]->ERROR
+[11:50:18]<-AT
+[11:50:18]->OK
+[11:50:31]stop test progress:runIndex:0

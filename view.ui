@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTextBrowser" name="display_textBrowser"/>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="14" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>测试次数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="QCheckBox" name="isCheckErr_checkBox">
+          <property name="text">
+           <string>错误检测</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QComboBox" name="com_comboBox"/>
+        </item>
+        <item row="13" column="0">
+         <widget class="QCheckBox" name="isSavefile_checkBox">
+          <property name="text">
+           <string>保存log</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QTextEdit" name="file_textEdit">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>60</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="refreah_pushButton">
+          <property name="text">
+           <string>刷新</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QCheckBox" name="isEnd_checkBox_2">
+          <property name="text">
+           <string>加ctrl+Z</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QPushButton" name="send_pushButton">
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QPushButton" name="clearDisplay_pushButton">
+          <property name="text">
+           <string>清除窗口</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QPushButton" name="openFile_pushButton">
+          <property name="text">
+           <string>打开文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="link_pushButton">
+          <property name="text">
+           <string>连接</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QPushButton" name="selectFile_pushButton">
+          <property name="text">
+           <string>选择文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="15" column="0" colspan="2">
+         <widget class="QPushButton" name="startTest_pushButton">
+          <property name="text">
+           <string>开始测试</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="QPushButton" name="saveFile_pushButton">
+          <property name="text">
+           <string>保存文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QCheckBox" name="isEnd_checkBox">
+          <property name="text">
+           <string>不加换行</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="bsp_comboBox"/>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLineEdit" name="cmd_lineEdit"/>
+        </item>
+        <item row="14" column="1">
+         <widget class="QComboBox" name="testTimes_comboBox"/>
+        </item>
+        <item row="9" column="1">
+         <widget class="QPushButton" name="clearsend_pushButton">
+          <property name="text">
+           <string>清除</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>循环次数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>发送时间</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="testTimes_comboBox_2"/>
+        </item>
+        <item row="8" column="1">
+         <widget class="QComboBox" name="testTimes_comboBox_3"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="fileDisplay_textEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>964</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionabout"/>
+    <addaction name="actionport"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionabout">
+   <property name="text">
+    <string>端口</string>
+   </property>
+   <property name="toolTip">
+    <string>端口</string>
+   </property>
+  </action>
+  <action name="actionport">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

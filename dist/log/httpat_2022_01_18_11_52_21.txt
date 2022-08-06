@@ -1,0 +1,23 @@
+[11:52:21]start test progress:index:0,times:1,check_err:False,log_file_name:./log/httpat_2022_01_18_11_52_21.txt
+[11:52:21]<-AT+UMV
+[11:52:21]->UMA602V1.0
+[11:52:21]->LTE_2021.12.28_2140
+[11:52:21]->UM-04-0304-0002
+[11:52:21]->UMA602/TNNLN
+[11:52:21]->OK
+[11:52:21]<-ATE0
+[11:52:21]->OK
+[11:52:21]<-AT+HTTPCFG="responseheader",0
+[11:52:22]->OK
+[11:52:22]<-AT+HTTPCFG="requestheader",0
+[11:52:22]->OK
+[11:52:22]<-AT+HTTPCFG="rspout/auto",1
+[11:52:22]->OK
+[11:52:22]<-AT+HTTPURL=118,10
+[11:52:22]->CONNECT
+[11:52:22]<-http://api.openweathermap.org/data/2.5/weather?q=shanghai&appid=c592e14137c3471fa9627b44f6649db4&mode=xml&units=metric
+[11:52:22]->+HTTPURL:http://api.openweathermap.org/data/2.5/weather?q=shanghai&appid=c592e14137c3471fa9627b44f6649db4&mode=xml&units=metric
+[11:52:22]->OK
+[11:52:22]<-AT+HTTPFILEDL=0
+[11:52:22]->OK
+[11:52:29]stop test progress:runIndex:0
